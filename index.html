@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                  <div class="text">
+                    <strong>Dear Quỳnh Như,</strong>
+                    <p>
+                      Ngày mai là tròn 3 tháng tụi mình bên nhau rồi đó, anh có một bất ngờ nhỏ dành cho em. 
+                      Anh đã đặt bàn ở <a href="https://joyhouse.com.vn/" target="_blank" rel="noopener noreferrer">
+                        đây
+                      </a>, vào lúc 20h 1/7/2025.<br/>
+                      Anh sẽ đón em vào lúc 19h00 nhé.
+                    </p>
+                    
+                    <p style="margin-top: 12px;">
+                      Trân trọng,<br/>
+                      <strong>Thịnh</strong>
+                    </p>
+                    
+                  </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
